@@ -1,8 +1,9 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    It is my first {{ title }} on Angular!
-  </h1>
+<div class="container">
+  <h3>List of products</h3>
+
+  <ul class="list-group list-group-flush">
+    <li *ngFor="let product of products" class="list-group-item">
+      {{ product.name }}
+    </li>
+  </ul>
 </div>
-
-
